@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>Carousel_Basic Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link href="./css/slider.css" rel="stylesheet" media="screen">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="./js/slider.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                initSlider($('#images'), 3000);
+            });
+        </script>
+    </head>
+    <body>
+        <div id='slider'>
+            <div id='images' class="car" >
+                <div class="sliderSlide" style="background: url('./img/car1.jpg'); background-repeat: no-repeat; background-size: 100%;">
+                    <div class="slideBody">
+                        <span class="slideTitle">Slide 1 Demo</span>
+                        <br />
+                        <span class="slideText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate consequat vehicula. 
+                        </span><br /><br />
+                        <div class="slideBtn">Read More</div>                            
+                    </div>
+                </div>
+                <div class="sliderSlide" style="background: url('./img/car2.jpg'); background-repeat: no-repeat; background-size: 100%;">
+                    <div class="slideBody">
+                        <span class="slideTitle">A Second Slide</span>
+                        <br />
+                        <span class="slideText">
+                        In vitae condimentum ante, at scelerisque nulla. Etiam non odio eu est elementum vehicula. Maecenas volutpat ipsum vel blandit porttitor.
+                        </span>
+                        <br /><br />
+                        <a href="https://github.com/verticalsoftware" target="_blank"><div class="slideBtn">Go To Git</div></a>
+                    </div>
+                </div>
+                <div class="sliderSlide" style="background: url('./img/car4.jpg'); background-repeat: no-repeat; background-size: 100%;">
+                    <div class="slideBody">
+                        <span class="slideTitle">Third Slide is here.</span>
+                        <br />
+                        <span class="slideText">
+                        Vestibulum fermentum sed mi quis volutpat. Vestibulum pharetra vel tellus nec vestibulum. Ut auctor nulla vitae magna ultricies, non bibendum elit posuere.
+                        </span>
+                        <br /><br />
+                        <div class="slideBtn">Contact Us</div>                            
+                    </div>
+                </div>                    
+            </div>
+            <div id="slideKnobsContainer"></div>
+        </div>
+    <body>
+</html>    
